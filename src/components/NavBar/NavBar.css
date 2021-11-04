@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-
+  z-index: 2000;
 }
 
 nav {
@@ -13,11 +13,11 @@ li {
   padding: 20px;
 }
 
-.main-nav {
+ul {
   display: flex;
   list-style: none;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 a {
