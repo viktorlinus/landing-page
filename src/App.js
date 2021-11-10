@@ -10,6 +10,7 @@ function App() {
         <NavBar className="sticky"/>
         <Routes>
           <Route path="/" element={<Intro/> } />
+          <Route path="/landing-page" element={<Intro/> } />
           <Route path="/projects" element={<Projects />} />
           <Route
           path="*"

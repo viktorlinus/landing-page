@@ -5,7 +5,7 @@ const Intro = () => {
 	    <div id="intro" className="test">
 	    	<div className="mask">
 	    		<div className="container">
-	    			<div className="text">
+	    			<div className="textVit">
 	    				<h1>Welcome to my landing page</h1>
 	    				<h5>Follow me on my journey to be a self employed programmer</h5>
 	    			</div>
