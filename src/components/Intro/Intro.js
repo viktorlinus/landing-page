@@ -1,4 +1,3 @@
-import test from '../../test.jpg';
 import './Intro.css';
 
 const Intro = () => {

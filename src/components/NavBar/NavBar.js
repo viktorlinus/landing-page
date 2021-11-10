@@ -1,12 +1,13 @@
 import './NavBar.css';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 	        <div className="sticky">
 	        	<nav className="">
 		        	<ul>
-		         	 <li><strong><a href="#!">EKEN</a></strong></li>
-		         	 <li><a href="#!">Home</a></li>
+		         	 <Link className="Link" to="/"><strong>EKEN</strong></Link>
+		         	 <Link className="Link" to="/projects">Projects</Link>
 		      		</ul>
 	      		</nav>
 	      	</div>

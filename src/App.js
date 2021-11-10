@@ -1,23 +1,26 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Intro from './components/Intro/Intro';
+import {Routes, Route} from 'react-router-dom';
+import Projects from './Projects'
 
 function App() {
   return (
-    <div className="App">
-      <header>
+      <div className="App">
         <NavBar className="sticky"/>
-        <Intro/> 
-      </header>
-      <h1>text</h1>
-      <h1>text</h1>
-      <h1>text</h1>
-      <h1>text</h1>
-      <h1>text</h1>
-      <h1>text</h1>
-      <h1>text</h1>
-      <h1>text</h1>
-    </div>
+        <Routes>
+          <Route path="/" element={<Intro/> } />
+          <Route path="/projects" element={<Projects />} />
+          <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+          />
+        </Routes>
+      </div>
   );
 }
 
