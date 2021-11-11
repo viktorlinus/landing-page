@@ -6,8 +6,8 @@ const Intro = () => {
 	    	<div className="mask">
 	    		<div className="container">
 	    			<div className="textVit">
-	    				<h1>Welcome to my landing page</h1>
-	    				<h5>Follow me on my journey to be a self employed programmer</h5>
+	    				<h1 className="titleText">Welcome to my landing page</h1>
+	    				<h4 className="underText">Follow me on my journey to become a self employed programmer</h4>
 	    			</div>
 	    		</div>
 	    	</div>
