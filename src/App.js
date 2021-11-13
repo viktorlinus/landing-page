@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Intro from './components/Intro/Intro';
+import Introduction from './components/Introduction/Introduction';
 import {Routes, Route} from 'react-router-dom';
 import Projects from './Projects'
 
@@ -9,7 +10,12 @@ function App() {
       <div className="App">
         <NavBar className="sticky"/>
         <Routes>
-          <Route path="/" element={<Intro/> } />
+          <Route path="/" element={
+            <main >
+              <Intro/>
+              <Introduction /> 
+            </main>
+            } />
           <Route path="/landing-page" element={<Intro/> } />
           <Route path="/projects" element={<Projects />} />
           <Route
