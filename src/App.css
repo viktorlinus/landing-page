@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.smallBlogPost {
+  border: 10px solid blue;
+}
 
 body {
   margin: 0;

@@ -3,21 +3,28 @@ import NavBar from './components/NavBar/NavBar';
 import Intro from './components/Intro/Intro';
 import Introduction from './components/Introduction/Introduction';
 import {Routes, Route} from 'react-router-dom';
-import Projects from './Projects'
+import Projects from './Projects';
+import BlogPost from './components/BlogPost/BlogPost';
 
 function App() {
   return (
       <div className="App">
-        <NavBar className="sticky"/>
+        <NavBar className=""/>
         <Routes>
           <Route path="/" element={
             <main >
               <Intro/>
-              <Introduction /> 
+              <Introduction />
             </main>
             } />
-          <Route path="/landing-page" element={<Intro/> } />
+          <Route path="/landing-page" element={
+            <main >
+              <Intro/>
+              <Introduction />
+            </main>
+            } />
           <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:invoiceId" element={<BlogPost />} />
           <Route
           path="*"
           element={
